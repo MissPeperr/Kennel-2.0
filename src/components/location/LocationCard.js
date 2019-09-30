@@ -9,6 +9,7 @@ class LocationCard extends Component {
                         <h3>{this.props.location.name}</h3>
                         <h3>{this.props.location.address}</h3>
                         <h4>{this.props.location.city} {this.props.location.state}</h4>
+                        <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Close Location</button>
                     </div>
                 </div>
             </div>
