@@ -1,7 +1,113 @@
 {
     "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Sheperd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
+        {
+            "id": 1,
+            "name": "Doodles",
+            "breed": "Poodle"
+        },
+        {
+            "id": 2,
+            "name": "Decker",
+            "breed": "German Sheperd"
+        },
+        {
+            "id": 3,
+            "name": "Esme",
+            "breed": "Pitbull"
+        }
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "firstName": "Madison",
+            "lastName": "Peper"
+        },
+        {
+            "id": 2,
+            "firstName": "Mo",
+            "lastName": "Silvera"
+        },
+        {
+            "id": 3,
+            "firstName": "Jenna",
+            "lastName": "Solis"
+        },
+        {
+            "id": 4,
+            "firstName": "Leah",
+            "lastName": "Gwin"
+        },
+        {
+            "id": 5,
+            "firstName": "Kristen",
+            "lastName": "Norris"
+        },
+        {
+            "id": 6,
+            "firstName": "Bryan",
+            "lastName": "Nilsen"
+        }
+    ],
+    "locations": [
+        {
+            "id": 1,
+            "name": "West Nashville",
+            "address": "500 Puppy Way",
+            "city": "Nashville",
+            "state": "TN"
+        },
+        {
+            "id": 2,
+            "name": "East Nashville",
+            "address": "1000 Nunya Business Drive",
+            "city": "Nashville",
+            "state": "TN"
+        },
+        {
+            "id": 3,
+            "name": "South Nashville",
+            "address": "400 Outta-my Way",
+            "city": "Nashville",
+            "state": "TN"
+        },
+        {
+            "id": 5,
+            "name": "North Nashville",
+            "address": "985 Nice Place",
+            "city": "Nashville",
+            "state": "TN"
+        }
+    ],
+    "owners": [
+        {
+            "id": 1,
+            "firstName": "Brenda",
+            "lastName": "Long"
+        },
+        {
+            "id": 2,
+            "firstName": "Andy",
+            "lastName": "Collins"
+        },
+        {
+            "id": 3,
+            "firstName": "Jisie",
+            "lastName": "David"
+        },
+        {
+            "id": 4,
+            "firstName": "Joe",
+            "lastName": "Shepherd"
+        },
+        {
+            "id": 5,
+            "firstName": "Adam",
+            "lastName": "Sheaffer"
+        },
+        {
+            "id": 6,
+            "firstName": "Steve",
+            "lastName": "Brownlee"
+        }
     ]
 }
