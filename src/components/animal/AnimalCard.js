@@ -12,6 +12,7 @@ class AnimalCard extends Component {
           {
             this.props.animal.breed === "Pitbull" ? <p>BEST BREED EVER. SO SWEET.</p> : <p>Breed: {this.props.animal.breed}</p>
           }
+          <button type="button" onClick={() => this.props.deleteAnimal(this.props.animal.id)}>Discharge</button>
         </div>
       </div>
     );
