@@ -7,7 +7,8 @@ class LocationDetail extends Component {
         name: "",
         address: "",
         city: "",
-        state: ""
+        state: "",
+        loadingStatus: true
     }
 
     componentDidMount() {
@@ -17,7 +18,8 @@ class LocationDetail extends Component {
                     name: location.name,
                     address: location.address,
                     city: location.city,
-                    state: location.state
+                    state: location.state,
+                    loadingStatus: false
                 });
             });
     }
