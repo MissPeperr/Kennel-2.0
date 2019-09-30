@@ -7,25 +7,41 @@ class LocationList extends Component {
         locations: [],
     }
 
-componentDidMount(){
-    LocationManager.getAll()
-    .then((locations) => {
-        console.log("all locations", locations)
-        this.setState({
-            locations: locations
-        })
-    })
-}
+    componentDidMount() {
+        LocationManager.getAll()
+            .then((locations) => {
+                console.log("all locations", locations)
+                this.setState({
+                    locations: locations
+                })
+            })
+    }
 
-render(){
-    console.log("ANIMAL LIST: Render");
+    deleteLocation = id => {
+        LocationManager.delete(id)
+            .then(() => {
+                LocationManager.getAll()
+                    .then((newLocations) => {
+                        this.setState({
+                            locations: newLocations
+                        })
+                    })
+            })
+    }
 
-    return(
-        <div className="container-cards">
-            {this.state.locations.map(location => <LocationCard key={location.id} location={location}/>)}
-        </div>
-    )
-}
+    render() {
+
+        return (
+            <div className="container-cards">
+                {this.state.locations.map(location =>
+                    <LocationCard
+                        key={location.id}
+                        location={location}
+                        deleteLocation={this.deleteLocation}
+                    />)}
+            </div>
+        )
+    }
 }
 
 export default LocationList
