@@ -6,19 +6,9 @@ class LocationCard extends Component {
             <div className="card">
                 <div className="card-content">
                     <div className="location">
-                        <h3>West Nashville</h3>
-                        <h3>500 Puppy Way</h3>
-                        <h4>Nashville, TN</h4>
-                    </div>
-                    <div className="location">
-                        <h3>East Nashville</h3>
-                        <h3>500 Puppy Way</h3>
-                        <h4>Nashville, TN</h4>
-                    </div>
-                    <div className="location">
-                        <h3>South Nashville</h3>
-                        <h3>500 Puppy Way</h3>
-                        <h4>Nashville, TN</h4>
+                        <h3>{this.props.location.name}</h3>
+                        <h3>{this.props.location.address}</h3>
+                        <h4>{this.props.location.city} {this.props.location.state}</h4>
                     </div>
                 </div>
             </div>

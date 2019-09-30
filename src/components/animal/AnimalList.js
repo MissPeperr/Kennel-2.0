@@ -26,7 +26,7 @@ render(){
 
     return(
         <div className="container-cards">
-            {this.state.animals.map(animal => <AnimalCard key={animal.id}/>)}
+            {this.state.animals.map(animal => <AnimalCard key={animal.id} animal={animal}/>)}
         </div>
     )
 }
