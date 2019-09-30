@@ -14,6 +14,16 @@
             "id": 3,
             "name": "Esme",
             "breed": "Pitbull"
+        },
+        {
+            "id": 4,
+            "name": "Doug",
+            "breed": "Pitbull"
+        },
+        {
+            "id": 5,
+            "name": "Maya",
+            "breed": "Polar Bear"
         }
     ],
     "employees": [

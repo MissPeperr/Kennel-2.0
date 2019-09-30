@@ -9,7 +9,10 @@ class AnimalCard extends Component {
             <img src={require('./dog.svg')} alt="My Dog" />
           </picture>
           <h3>Name: <span className="card-petname">{this.props.animal.name}</span></h3>
-          <p>Breed: Poodle</p>
+          {
+            this.props.animal.breed === "Pitbull" ? <p>BEST BREED EVER. SO SWEET.</p> : <p>Breed: {this.props.animal.breed}</p>
+          }
+          <button type="button" onClick={() => this.props.deleteAnimal(this.props.animal.id)}>Discharge</button>
         </div>
       </div>
     );
