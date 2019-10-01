@@ -24,6 +24,12 @@ class LocationDetail extends Component {
             });
     }
 
+    handleDelete = () => {
+        this.setState({loadingStatus: true})
+        LocationManager.delete(this.props.locationId)
+        .then(() => this.props.history.push("/locations"))
+    }
+
     render() {
         return (
             <div className="card">
@@ -32,6 +38,7 @@ class LocationDetail extends Component {
                         <h3>{this.state.name}</h3>
                         <h3>{this.state.address}</h3>
                         <h4>{this.state.city} {this.state.state}</h4>
+                        <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Close Location</button>
                     </div>
                 </div>
             </div>
