@@ -22,8 +22,13 @@
     },
     {
       "id": 5,
-      "name": "Maya",
+      "name": "maya",
       "breed": "Polar Bear"
+    },
+    {
+      "name": "Pup",
+      "breed": "Pitbull",
+      "id": 6
     }
   ],
   "employees": [
@@ -100,11 +105,6 @@
       "lastName": "Collins"
     },
     {
-      "id": 3,
-      "firstName": "Jisie",
-      "lastName": "David"
-    },
-    {
       "id": 4,
       "firstName": "Joe",
       "lastName": "Shepherd"
@@ -118,6 +118,11 @@
       "id": 6,
       "firstName": "Steve",
       "lastName": "Brownlee"
+    },
+    {
+      "firstName": "Jisie",
+      "lastName": "David",
+      "id": 7
     }
   ]
 }
